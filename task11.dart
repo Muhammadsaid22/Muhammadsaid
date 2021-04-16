@@ -4,9 +4,11 @@ void main()
   int number = 1;
   if(number>0){strongnum(number);}
 }
+
+
 void strongnum(int number)
 {
-  int c= number;
+  int a= number;
   int sum =0, mul = 1;
   List<int> digits = []; 
   for(int i = 0; i<10; i++)
@@ -26,7 +28,7 @@ void strongnum(int number)
     }
     sum+=mul;    
   }
-  if(sum==c)
+  if(sum==a)
   {
     print("$number is strong");
   }
